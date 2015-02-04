@@ -10,6 +10,7 @@
 
 #import "ALImageView.h"
 #import "NetStreamStatistics.h"
+#import "NSString+URL.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @interface NSString (MD5)
@@ -374,7 +375,8 @@ const int REQUEST_RETRY_COUNT = 2;
 
 - (void)setImageURL:(NSString *)imageURL
 {
-    imageURL=[imageURL  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    imageURL=[imageURL URLEncodedString];
+    NSLog(@"###%@",imageURL);
     if (_imageURL != imageURL) {
         if (nil != _imageURL) {
             if (nil != _placeholderImage) {
@@ -540,6 +542,7 @@ const int REQUEST_RETRY_COUNT = 2;
         
         // if task is not current task, give up and release resources, springox(20140302)
         if (nil == img && countStamp == [self getTaskCount]) {
+
             NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:REQUEST_TIME_OUT_INTERVAL];
             int retryCount = -1;
             while (REQUEST_RETRY_COUNT > retryCount && countStamp == [self getTaskCount]) {

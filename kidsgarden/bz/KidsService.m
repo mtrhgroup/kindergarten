@@ -12,7 +12,7 @@
 #import "KidsArticle.h"
 #import "UserActionsController.h"
 #import "KidsAppCoverImage.h"
-#define url_prefix @"http://182.92.10.72/Api/Kindergarten/"
+#define url_prefix @"http://www.aiqinzi.com.cn/cms/Api/Kindergarten/"
 #define reg_url @"reg_device?imei=%@&kindergartenid=%@&device_model=%@&os=%@&app_version=%@"
 #define puh_url @"bind_push?imei=%@&kindergartenid=%@&appid=%@&userid=%@&channelid=%@"
 #define startup_image_url @"startup_image?imei=%@&kindergartenid=%@"
@@ -247,6 +247,9 @@
             KidsDBOperator *db_operator=[_db_manager aOperator];
             for(KidsArticle *article in articles){
                 article.channel_id=channelID;
+                NSLog(@"%@",article.title);
+               
+
                 [db_operator addArticle:article];
             }
             [db_operator save];

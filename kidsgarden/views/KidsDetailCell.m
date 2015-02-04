@@ -50,6 +50,7 @@
             thumbnail_view.hidden=YES;
         }else{
             thumbnail_view.hidden=NO;
+            NSLog(@"$$ %@  %@",article.title,article.thumbnail_url);
             thumbnail_view.imageURL=article.thumbnail_url;
             title_label.frame=CGRectMake(90, 8, 222, 22);
             summary_label.frame=CGRectMake(90, 30, 222, 34);

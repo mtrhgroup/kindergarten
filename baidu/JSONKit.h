@@ -72,6 +72,7 @@
 extern "C" {
 #endif
     
+    
     // For Mac OS X < 10.5.
 #ifndef   NSINTEGER_DEFINED
 #define   NSINTEGER_DEFINED
@@ -183,7 +184,7 @@ extern "C" {
 - (id)mutableObjectFromJSONStringWithParseOptions:(JKParseOptionFlags)parseOptionFlags error:(NSError **)error;
 @end
     
-@interface NSData (JSONKitDeserializing)
+    @interface NSData (JSONKitDeserializing)
 // The NSData MUST be UTF8 encoded JSON.
 - (id)objectFromJSONData;
 - (id)objectFromJSONDataWithParseOptions:(JKParseOptionFlags)parseOptionFlags;

@@ -55,8 +55,8 @@
 }
 -(void)initBaiduFrontia{
     self.share=[Frontia getShare];
-    [self.share registerQQAppId:@"100358052" enableSSO:NO];
-    [self.share registerWeixinAppId:@"wx712df8473f2a1dbe"];
+    [self.share registerQQAppId:@"1103553009" enableSSO:NO];
+    [self.share registerWeixinAppId:@"wxf86a8b2e2abf468c"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

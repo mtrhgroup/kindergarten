@@ -29,9 +29,9 @@
         self.service=AppDelegate.content_service;
         UIImageView *defaultImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         if(frame.size.height==568.0){
-            defaultImageView.image=[UIImage imageNamed:@"Default~iphone.png"] ;
+            defaultImageView.image=[UIImage imageNamed:@"Default-568h@2x.png"] ;
         }else{
-            defaultImageView.image=[UIImage imageNamed:@"Default.png"] ;
+            defaultImageView.image=[UIImage imageNamed:@"Default@2x.png"] ;
         }
         [self addSubview:defaultImageView];
         _startup_time=[NSDate date];
@@ -93,8 +93,8 @@
     }
 }
 -(void)errorReport{
-    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"系统提示" message:@"初始化错误，请检查网络稍后重试！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
+//    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"系统提示" message:@"初始化错误，请检查网络稍后重试！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//    [alert show];
 }
 -(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
     exit(0);

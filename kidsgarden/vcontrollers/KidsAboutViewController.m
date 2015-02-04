@@ -32,7 +32,7 @@
     logoView.image=[UIImage imageNamed:@"logo_114.png"];
     [self.view addSubview:logoView];
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width/2-120, self.view.bounds.size.height/2-32, 240.0f, 64.0f)];
-    titleView.image=[UIImage imageNamed:@"app_title.png"];
+    titleView.image=[UIImage imageNamed:@"haitang_about.png"];
     [self.view addSubview:titleView];
     UILabel *vesion_info=[[UILabel alloc]initWithFrame:CGRectMake(titleView.frame.origin.x, titleView.frame.origin.y+titleView.frame.size.height+10, 200, 30)];
     [vesion_info setText:[NSString stringWithFormat:@"程序版本：%@",app_version]];
@@ -41,7 +41,7 @@
 //    [imei setText:[NSString stringWithFormat:@"设备标识：%@",[KidsOpenUDID value]]];
 //    [self.view addSubview:imei];
     UILabel *service_phone=[[UILabel alloc]initWithFrame:CGRectMake(titleView.frame.origin.x, titleView.frame.origin.y+titleView.frame.size.height+40, 200, 30)];
-    [service_phone setText:[NSString stringWithFormat:@"客服电话：%@",@"010-86888688"]];
+    [service_phone setText:[NSString stringWithFormat:@"客服电话：%@",@"0242366524"]];
     [self.view addSubview:service_phone];
     UILabel *copy_right=[[UILabel alloc]initWithFrame:CGRectMake(titleView.frame.origin.x, titleView.frame.origin.y+titleView.frame.size.height+70, 200, 50)];
     [copy_right setFont:[UIFont systemFontOfSize:12]];

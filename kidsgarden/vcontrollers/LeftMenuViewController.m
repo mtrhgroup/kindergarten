@@ -37,7 +37,7 @@
     self.view.backgroundColor=[UIColor blackColor];
     self.title_label=[[UILabel alloc]initWithFrame:CGRectMake(10, 20, self.view.bounds.size.width, 30)];
     self.title_label.textColor=[UIColor whiteColor];
-    self.title_label.text=@"蓝天幼儿园";
+    self.title_label.text=@"海棠幼儿园";
     self.title_label.font = [UIFont fontWithName:@"Arial" size:20];
     self.title_label.backgroundColor=[UIColor clearColor];
     [self.view addSubview:self.title_label];
