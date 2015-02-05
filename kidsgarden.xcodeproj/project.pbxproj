@@ -38,8 +38,6 @@
 		184174FD1918776C00254C55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184174FC1918776C00254C55 /* XCTest.framework */; };
 		184174FE1918776C00254C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184174DD1918776C00254C55 /* Foundation.framework */; };
 		184174FF1918776C00254C55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184174E11918776C00254C55 /* UIKit.framework */; };
-		184175071918776C00254C55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184175051918776C00254C55 /* InfoPlist.strings */; };
-		184175091918776C00254C55 /* kidsgardenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184175081918776C00254C55 /* kidsgardenTests.m */; };
 		1841752719189E7100254C55 /* SUNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841751419189E7100254C55 /* SUNTextField.m */; };
 		1841752819189E7100254C55 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841751819189E7100254C55 /* MMDrawerBarButtonItem.m */; };
 		1841752919189E7100254C55 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841751B19189E7100254C55 /* MMDrawerController.m */; };
@@ -253,9 +251,6 @@
 		184174F51918776C00254C55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		184174FB1918776C00254C55 /* kidsgardenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidsgardenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184174FC1918776C00254C55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		184175041918776C00254C55 /* kidsgardenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kidsgardenTests-Info.plist"; sourceTree = "<group>"; };
-		184175061918776C00254C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		184175081918776C00254C55 /* kidsgardenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kidsgardenTests.m; sourceTree = "<group>"; };
 		1841751319189E7100254C55 /* SUNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNTextField.h; sourceTree = "<group>"; };
 		1841751419189E7100254C55 /* SUNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNTextField.m; sourceTree = "<group>"; };
 		1841751719189E7100254C55 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
@@ -605,7 +600,6 @@
 			isa = PBXGroup;
 			children = (
 				184174E31918776C00254C55 /* kidsgarden */,
-				184175021918776C00254C55 /* kidsgardenTests */,
 				184174DC1918776C00254C55 /* Frameworks */,
 				184174DB1918776C00254C55 /* Products */,
 			);
@@ -663,24 +657,6 @@
 				184174E61918776C00254C55 /* InfoPlist.strings */,
 				184174E91918776C00254C55 /* main.m */,
 				184174EB1918776C00254C55 /* kidsgarden-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		184175021918776C00254C55 /* kidsgardenTests */ = {
-			isa = PBXGroup;
-			children = (
-				184175081918776C00254C55 /* kidsgardenTests.m */,
-				184175031918776C00254C55 /* Supporting Files */,
-			);
-			path = kidsgardenTests;
-			sourceTree = "<group>";
-		};
-		184175031918776C00254C55 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				184175041918776C00254C55 /* kidsgardenTests-Info.plist */,
-				184175051918776C00254C55 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1288,7 +1264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184175071918776C00254C55 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1403,7 +1378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184175091918776C00254C55 /* kidsgardenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1422,14 +1396,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				184174E71918776C00254C55 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		184175051918776C00254C55 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				184175061918776C00254C55 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
